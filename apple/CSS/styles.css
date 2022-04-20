@@ -1,0 +1,420 @@
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+  }
+
+.section-1{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+.container-fluids{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.big-heading{
+    position: absolute;
+    top: 10%;
+    right: 10rem;
+    font-size: 6rem;
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-family: "Work Sans", sans-serif;
+    color: black;
+}
+.secondary-title{
+    position: absolute;
+    top: 20%;
+    right: 13rem;
+    letter-spacing: 2px;
+    color: black;
+    font-family: "Montserrat-Black";
+    font-weight: lighter;
+}
+
+.Founder{
+    position: absolute;
+    top: 25%;
+    right: 27rem;
+    color: black;
+    font-family: "Montserrat-Black";
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.download-btn{
+    position: absolute;
+    top: 30%;
+    right: 27rem;
+    padding: 1rem 2rem;
+    font-size: 1;
+    background-color: black;
+    color: #6edae6;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    clip-path: polygon(
+        50% 0%,
+        81% 5%,
+        100% 0,
+        100% 100%,
+        80% 95%,
+        50% 100%,
+        20% 95%,
+        0 100%,
+        0 0,
+        23% 5%
+  );
+}
+.navbar{
+    position: relative;
+}
+
+.brand{
+    position: relative;
+    top: .3rem;
+    left: 3rem;
+    font-size: 2rem;
+    font-weight: 1000;
+    color: white;
+}
+.fab{
+    position: absolute;
+    top: -3.5rem;
+    width: 4rem;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.navbar-collapse{
+    position: absolute;
+    right: 20%;
+    letter-spacing: .25 rem;
+}
+.form-control{
+    position: relative;
+    left: 40%;
+    width: 6rem;
+}
+.btn{
+    position: absolute;
+    top: 0.7rem;
+    left: 23rem;
+}
+.iphone{
+    position: absolute;
+    top: 1rem;
+    height: 35%;
+    left: 8rem;
+}
+
+.section-2 {
+    width: 100%;
+    height: 120vh;
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.section-2-heading {
+    font-size: 6rem;
+    font-weight: 200;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  
+.section-2-heading::before {
+    content: "";
+    width: 130%;
+    height: 30vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewX(-50deg);
+    transform-origin: left top;
+    z-index: -1;
+    border-radius: 1rem;
+}
+
+.iphones {
+    height: 60vh;
+    width: 50vw;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(var(--primary-color), var(--white-color));
+  }
+  
+.iphones img {
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+    position: absolute;
+    transition: opacity 3s;
+}
+  
+.iphone-img-2 {
+    opacity: 0;
+}
+  
+.iphones:hover .iphone-img-1 {
+    opacity: 0;
+}
+  
+.iphones:hover .iphone-img-2 {
+    opacity: 1;
+}
+.section-3 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-color);
+    flex-direction: column;
+    padding: 15rem 0;
+    clip-path: polygon(68% 0, 100% 0, 100% 97%, 38% 100%, 0 100%, 0 3%);
+  }
+.section-3-heading {
+    font-size: 10rem;
+    font-weight: 200;
+    color: var(--primary-color);
+    margin-bottom: 15rem;
+  }
+.section-3-content {
+    width: 80%;
+    flex-direction: column;
+    perspective: 1000rem;
+    position: relative;
+  }
+.section-3-content img {
+    width: inherit;
+  }
+  
+.macbook-img-1 {
+    transform: rotateX(-80deg);
+    transform-origin: bottom;
+  }
+  
+.change .macbook-img-1 {
+    transform: rotateX(0);
+    transition: transform 3s;
+  }
+.loading-wrapper {
+    position: absolute;
+    top: 6%;
+    width: 60%;
+    height: 85%;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)
+      ),
+      url(images/MacBook/macbook-1-desktop.png) center no-repeat;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+.change .loading-wrapper {
+    opacity: 1;
+    transition: opacity 1s 2s;
+  }
+  
+.loading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--black-color);
+    flex-direction: column;
+  }
+  
+.change .loading {
+    opacity: 0;
+    transition: 1s 5s;
+  }
+  
+.loading i {
+    font-size: 10rem;
+    color: var(--white-color);
+    margin-bottom: 2rem;
+  }
+  
+.progress-bar {
+    width: 22rem;
+    height: 0.3rem;
+    background-color: #888;
+    border-radius: 5rem;
+    position: relative;
+  }
+  
+.progress-bar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--white-color);
+  }
+  
+.change .progress-bar::after {
+    width: 100%;
+    transition: width 1s 3s;
+  }
+
+ .macbook-info {
+    position: absolute;
+    width: 70rem;
+    text-align: center;
+    opacity: 0;
+  }
+.change .macbook-info {
+    opacity: 1;
+    transition: opacity 1s 6s;
+  }
+  
+.macbook-info-heading {
+    font-size: 6rem;
+    font-weight: 400;
+    color: var(--primary-color);
+  }
+  
+.macbook-price {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin: 3rem 0;
+  }
+  
+.macbook-btn {
+    width: 25rem;
+    height: 5rem;
+    background-image: linear-gradient(#ddd, #fff);
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #fff, -0.1rem -0.1rem 0.1rem #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+
+
+.section-5 {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+  
+.airpods {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    position: relative;
+}
+.section-5-heading {
+    position: absolute;
+    top: 0;
+    left: 38%;
+    font-size: 7rem;
+    font-weight: 500;
+    color: #6edae6;
+}
+.airpods img {
+    position: relative;
+    width: 35%;
+    height: 95%;
+    padding-top: 3rem;
+    object-fit: contain;
+}
+.airpods-img-1 {
+    position: absolute;
+    background-color:#fff;
+    top: 8rem;
+    left: 14rem;
+}  
+.airpods-img-2 {
+    position: absolute;
+    background-color:#6edae6;
+    top: 8rem;
+    left: 18rem;
+}
+.airpods-buttons {
+    position: relative;
+}
+  
+.airpods-btn-1 {
+    position: absolute;
+    width:  8rem;
+    height: 2rem;
+    right: 22rem;
+    top: 12rem;
+    border: none;
+    background-color:#6edae6 ;
+    color: #fff;
+    font-weight: 600;
+}
+.airpods-btn-2 {
+    position: absolute;
+    width:  8rem;
+    height: 2rem;
+    left: 1rem;
+    top: 12rem;
+    border: none;
+    background-color:#fff ;
+    color: #6edae6;
+    font-weight: 600;
+}
+.section-6 {
+    width: 100%;
+    height: 22vh;
+    position: relative;
+}
+.container{
+    top: 2rem;
+    position: absolute;
+}
+.col-md-2{
+    margin: auto 2rem;
+}
+.icon-link1{
+    position: absolute;
+    width: 4rem;
+    left: 14rem;
+}
+.icon-link2{
+    position: absolute;
+    width: 4rem;
+    left: 27rem;
+}
+.icon-link3{
+    position: absolute;
+    width: 4rem;
+    left: 40.5rem;
+}
+.icon-link4{
+    position: absolute;
+    width: 4rem;
+    left: 55rem;
+}
+.icon-link5{
+    position: absolute;
+    width: 4rem;
+    left: 68rem;
+}
+
+.copyright {
+    position: absolute;
+    padding-top: 2rem;
+    font-size: 1rem;
+    font-family: "Montserrat-Black";
+    color: black;
+    bottom: 0;
+    left: 34rem;
+}
+
+
